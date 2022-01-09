@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반복문</title>
+  <link rel="stylesheet" href="./repeat.css" />
+</head>
+<body>
+  <script>
+    var i, j, n;
+    var Factorial;
+
+    document.write("<h2>for문</h2>");
+    for(i = 1; i <= 9; i++) {
+      document.write("<div><h3>" + i + "단</h3>");
+      for(j = 1; j <= 9; j++) {
+        document.write(i + " X " + j + " = " + i * j + "<br>");
+      }
+      document.write("</div>");
+    }
+
+    n = 1;
+    Factorial = 1;
+    document.write("<h2>while문</h2>");
+    while(n <= 10) {
+      Factorial *= n;
+      n++;
+    }
+    document.write("10! =" + Factorial);
+
+  </script>
+</body>
+</html>
