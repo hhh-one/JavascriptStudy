@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>조건문</title>
+</head>
+<body>
+  <script>
+    var userNumber = prompt("숫자를 입력하세요.");
+
+    // prompt에서 취소를 누르면 null이 저장됨
+    if(userNumber !== null) {
+      /* ===,!== : 자료형까지 비교하는 연산자   3 === "3" false
+       ==,!= : 값만 비교하는 연산자             3 == "3" true */
+      if(userNumber % 3 === 0) {
+        alert("3의 배수입니다.");
+      } 
+      else {
+        alert("3의 배수가 아닙니다.");
+      }
+    }
+  </script>
+</body>
+</html>
