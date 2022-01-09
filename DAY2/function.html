@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>var 예약어를 사용한 지역 변수와 전역 변수</title>
+</head>
+<body>
+  <script>
+    /* let: es6 이후에 나온 예약어
+    var의 단점 1: 지역변수와 전역변수를 판단해서 잘 써야함
+               2: 변수를 재사용할 수 있음
+               3: 호이스팅- 끌어올린다
+    let 변수 특징 1: 블록 변수
+                  2: 재사용 안됨
+                  3: 호이스팅이 안됨
+    */
+
+    function addNumber() {
+      var sum = 10 + 20; // sum의 scope는 함수 안으로 국한 = 지역변수, local 변수
+      // sum = 10 + 20; //전역변수
+      console.log(sum);
+    }
+    addNumber();
+    // console.log(sum); //전역 변수로 사용해야 오류가 안 뜸
+  </script>
+</body>
+</html>
