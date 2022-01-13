@@ -14,6 +14,18 @@
     }
     var result = addNumber(2, 3); // 인자 
     document.write("두 수를 더한 값 : " + result);
+
+    // 즉시 실행 함수 (매개변수 ㅇ)
+    (function(num1, num2) {
+      sum = num1 + num2;
+    }(10, 20));
+    document.write("실행 결과: " + sum);
+
+    // 즉시 실행 함수
+    (function() {
+      var userName = prompt("이름을 입력하세요");
+      document.write("안녕하세요?" + userName + "님!");
+    }());
   </script>
 </body>
 </html>
