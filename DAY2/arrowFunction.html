@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arrow Function</title>
+</head>
+<body>
+  <script>
+    //익명 함수 = 이름이 없는 함수(예_즉시 실행 함수)
+    var hi = function() { //var 말고 const도 가능(매번 안녕하세요만 출력하기 때문)
+      alert("안녕하세요?");
+    }
+    hi();
+
+    //화살표 함수
+    const hi = () => {alert("안녕하세요");};
+    hi();
+
+    //화살표 함수 (매개변수 ㅇ)
+    let hi = (user) => {document.write(user + "님, 안녕하세요?");};
+    hi("혜원");
+  </script>
+</body>
+</html>
